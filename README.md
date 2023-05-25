@@ -13,23 +13,23 @@ Usage: solver [OPTIONS] -i `<FILE>`
 Options:
   * -i, `<FILE>`\
      A file that contains the encoding of the instance. 
+  * -c, `<FILE>`\
+     A file to which the inconsistency proof should be printed to, if the instance has no extension.
   * -d, `<FILE>`\
      A file that contains the instance description.
-  * -r, `<FILE>`\
-     A file that contains the required arguments.           
-  * -s, `<SEMANTICS>`\
-     The semantics that the proof adheres to. [possible values: Stable]
-  * -n, `<EXTENSIONS>`\
-     The number of extensions that should be enumerated or 0 for no limit. [default: 0]          
-  * -t, `<TIMEOUT>`\
-     The timeout in seconds 0 for no limit. [default: 0]
-  * -p, `<PERCENTAGE>`\
-     The percentage of clauses that should be forgotten in each cycle. [default: 0.5]    
   * -g, `<RATE>`\
      The growth rate for clause learning in each cycle. [default: 2]              
   * -h, `<HEURISTIC>`\
      The heuristic to to use. [possible values0: None, MaxOutDegree, MinInDegree, PathLengthN, ModifiedPathLengthN; default: None]
+  * -n, `<EXTENSIONS>`\
+     The number of extensions that should be enumerated or 0 for no limit. [default: 0]          
+  * -p, `<PERCENTAGE>`\
+     The percentage of clauses that should be forgotten in each cycle. [default: 0.5]       
   * -q\
      When provided, the extensions are not printed.
-  * -c, `<FILE>`\
-     A file to which the inconsistency proof should be printed to, if the instance has no extension.
+  * -r, `<FILE>`\
+     A file that contains the required arguments.           
+  * -s, `<SEMANTICS>`\
+     The semantics that the proof adheres to. [possible values: Stable]     
+  * -t, `<TIMEOUT>`\
+     The timeout in seconds 0 for no limit. [default: 0]
