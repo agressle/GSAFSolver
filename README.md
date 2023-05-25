@@ -11,25 +11,25 @@ Requires fmt (c.f. https://fmt.dev). Build using cmake.
 Usage: solver [OPTIONS] -i `<FILE>`
 
 Options:
-  * -i, `<FILE>`\
+  * -i `<FILE>`\
      A file that contains the encoding of the instance. 
-  * -c, `<FILE>`\
+  * -c `<FILE>`\
      A file to which the inconsistency proof should be printed to, if the instance has no extension.
-  * -d, `<FILE>`\
+  * -d `<FILE>`\
      A file that contains the instance description.
-  * -g, `<RATE>`\
+  * -g `<RATE>`\
      The growth rate for clause learning in each cycle. [default: 2]              
-  * -h, `<HEURISTIC>`\
+  * -h `<HEURISTIC>`\
      The heuristic to to use. [possible values0: None, MaxOutDegree, MinInDegree, PathLengthN, ModifiedPathLengthN; default: None]
-  * -n, `<EXTENSIONS>`\
+  * -n `<EXTENSIONS>`\
      The number of extensions that should be enumerated or 0 for no limit. [default: 0]          
-  * -p, `<PERCENTAGE>`\
+  * -p `<PERCENTAGE>`\
      The percentage of clauses that should be forgotten in each cycle. [default: 0.5]       
   * -q\
      When provided, the extensions are not printed.
-  * -r, `<FILE>`\
+  * -r `<FILE>`\
      A file that contains the required arguments.           
-  * -s, `<SEMANTICS>`\
+  * -s `<SEMANTICS>`\
      The semantics that the proof adheres to. [possible values: Stable]     
-  * -t, `<TIMEOUT>`\
+  * -t `<TIMEOUT>`\
      The timeout in seconds 0 for no limit. [default: 0]
